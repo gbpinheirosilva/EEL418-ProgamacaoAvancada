@@ -20,7 +20,7 @@ export default function Products(props) {
             <div className="button">
                 <button 
                     className="purchase--button"
-                    onClick={props.addToCart}
+                    onClick={event=>props.addToCart(event, props.item)}
                 >
                     Buy
                 </button>

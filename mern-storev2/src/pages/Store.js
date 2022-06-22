@@ -6,9 +6,11 @@ export default Store(props){
     const  [cart, setCart] = React.useState([])
     console.log(cart)
 
-    function addToCart(event,item){
+
+
+    function addToCart(event, item){
         setCart(oldCart => oldCart.push(item))
-    };
+    }
 
     //data a definir pela API-loja
     //definir qtd de itens no array
